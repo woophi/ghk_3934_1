@@ -12,14 +12,29 @@ type Props = {
   price: string;
   moreInfoClick: () => void;
   preOrderClick: () => void;
+  preOrderClickBS: () => void;
+  backBS: () => void;
+  onCloseBS: () => void;
 
   bsText: ReactNode;
 };
 
-export const AIBox = ({ img, moreInfoClick, preOrderClick, price, subtitle, title, bsText }: Props) => {
+export const AIBox = ({
+  img,
+  moreInfoClick,
+  preOrderClick,
+  preOrderClickBS,
+  backBS,
+  onCloseBS,
+  price,
+  subtitle,
+  title,
+  bsText,
+}: Props) => {
   const [bsOpened, setOpenBS] = useState(false);
 
   const closeBs = () => {
+    onCloseBS();
     setOpenBS(false);
   };
 
@@ -91,6 +106,7 @@ export const AIBox = ({ img, moreInfoClick, preOrderClick, price, subtitle, titl
           <div className={appSt.rowBtns}>
             <ButtonMobile
               onClick={() => {
+                backBS();
                 setOpenBS(false);
               }}
               style={{ padding: '0 .5rem' }}
@@ -102,7 +118,7 @@ export const AIBox = ({ img, moreInfoClick, preOrderClick, price, subtitle, titl
               Назад
             </ButtonMobile>
             <ButtonMobile
-              onClick={preOrderClick}
+              onClick={preOrderClickBS}
               style={{ padding: '0 .5rem' }}
               shape="rounded"
               size="xs"
