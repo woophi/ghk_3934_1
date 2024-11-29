@@ -20,7 +20,7 @@ export const ThxLayout = () => {
       <Gap size={96} />
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile block view="primary" href="alfabank://investments">
+        <ButtonMobile block view="primary" href="alfabank://">
           Перейти на Главный
         </ButtonMobile>
       </div>
