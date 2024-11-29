@@ -198,7 +198,7 @@ export const App = () => {
       <img src={robotHb} width="100%" height={280} style={{ objectFit: 'cover' }} />
       <div className={appSt.container}>
         <Typography.TitleResponsive tag="h1" view="small" font="system" weight="semibold">
-          Бесплатные торговые роботы на базе ИИ для инвестирования
+          Торговые роботы на базе ИИ для инвестирования
         </Typography.TitleResponsive>
 
         <Typography.Text view="primary-medium">
