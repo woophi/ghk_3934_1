@@ -109,7 +109,7 @@ export const AIBox = ({ img, moreInfoClick, preOrderClick, price, subtitle, titl
               block
               view="primary"
             >
-              Предзаказ
+              Заказать
             </ButtonMobile>
           </div>
         }
