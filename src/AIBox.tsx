@@ -43,7 +43,7 @@ export const AIBox = ({ img, moreInfoClick, preOrderClick, price, subtitle, titl
           <div className={appSt.rowSB}>
             <Typography.Text view="primary-small">Доступные активы:</Typography.Text>
             <Typography.Text view="primary-small" color="positive" weight="bold">
-              акции, фьючерсы
+              биржевые
             </Typography.Text>
           </div>
           <div className={appSt.rowSB} style={{ marginTop: '4px' }}>

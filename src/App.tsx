@@ -1,4 +1,5 @@
 import { ButtonMobile } from '@alfalab/core-components/button/mobile';
+import { Gap } from '@alfalab/core-components/gap';
 import { List } from '@alfalab/core-components/list';
 import { Typography } from '@alfalab/core-components/typography';
 import { ReactNode, useState } from 'react';
@@ -336,6 +337,10 @@ export const App = () => {
             </>
           }
         />
+      </div>
+      <Gap size={96} />
+
+      <div className={appSt.bottomBtn}>
         <ButtonMobile shape="rounded" block view="primary" onClick={createPreOrder}>
           Оформить предзаказ
         </ButtonMobile>
