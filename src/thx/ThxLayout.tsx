@@ -11,7 +11,7 @@ export const ThxLayout = () => {
       <div className={thxSt.container}>
         <img src={thxCase} width={120} className={thxSt.rocket} />
         <Typography.TitleResponsive font="system" tag="h1" view="large" defaultMargins weight="bold">
-          Еще чуть-чуть...1
+          Еще чуть-чуть...
         </Typography.TitleResponsive>
         <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>
           И мы запустим предложение! Добавляем последние штрихи, чтобы все работало идеально.
@@ -20,7 +20,7 @@ export const ThxLayout = () => {
       <Gap size={96} />
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile block view="primary" href="alfabank:///">
+        <ButtonMobile block view="primary" onClick={() => window.close()}>
           Перейти на Главный
         </ButtonMobile>
       </div>
